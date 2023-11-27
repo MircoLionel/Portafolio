@@ -1,6 +1,74 @@
+/*barra de navegacion*/
+*
+.navbar{
+    padding: 1.5rem;
+    background-color: whitesmoke;
+}
+
+.navbar-collapse{ 
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+
+#wpp{
+    color: rgb(8, 232, 8);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Vidaloka', serif;
+}
+.hero-principal{
+    padding: 3rem;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Vidaloka', serif;
+
+
+}
+.hero{
+    background-color: transparent;
+    min-height: 450px;
+    text-align: center;
+}
+.MircoLionel{
+    margin: 20px;
+    border: solid 1px gray;
+    border-radius: 200px;
+    height: 350px;
+    width: 250px;
+
+}
+.MircoLionel:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px green;
+}
+
+
 body {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom, whitesmoke ,rgb(12, 238, 223));
+    background-image: linear-gradient(to bottom, whitesmoke ,rgb(87, 99, 98));
 
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+    
 }
