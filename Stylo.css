@@ -33,8 +33,10 @@ h1 {
     font-size: 1.5rem;
     font-family: 'Roboto Slab', serif;
     font-family: 'Vidaloka', serif;
-
-
+}
+.hero-principal h1:hover {
+    transform: rotateX('100%');
+    transition: 1s;
 }
 .hero{
     background-color: transparent;
@@ -54,28 +56,71 @@ h1 {
     transform: scale(1.1);
     box-shadow: 0 0 15px green;
 }
-
-
 body {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to bottom, whitesmoke ,rgb(87, 99, 98));
-
 }
-
-
-
-
+.hero-inferior img{
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.SobreMi {
+    height: 400px;
+    padding: 10px;
+    color: aquamarine;
+    background-color: black;
+}
+.SobreMi .cont{
+    max-width: 600px;
+    text-align: center;
+}
+.titulo{
+    font-size: 1.5rem;
+    padding: 10px 0;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Vidaloka', serif;
+}
+.texto{
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Vidaloka', serif;
+}
+svg {
+    width: 60px;
+    filter: drop-shadow(0 1px 4px rgba(32, 252, 12, ));
+}
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+}
+#grid-formacion{
+    height: 500px;
+    width: 1000px;
+    padding: 50px;
+}
+.col{
+    border: solid black 2px;
+    height: 400px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
     }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width:700px) {
     .hero-inferior{
         max-width: 600px;
-        justify-items: center;
-        align-items: center;
     }
     
 }
+@keyframes salto {
+    50% { transform: translateY(5px); }
+  }
+  
+  h1 {
+    animation: salto 0.1s 5;
+  }
