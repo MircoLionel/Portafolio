@@ -10,6 +10,10 @@
     justify-content: space-between;
 
 }
+.navbar i{
+    font-size: 2rem;
+    padding: 10px;;
+}
 
 
 #wpp{
@@ -96,27 +100,52 @@ svg {
     right:20px;
 }
 #grid-formacion{
-    height: 500px;
-    width: 1000px;
-    padding: 50px;
+    padding: auto auto;
+    justify-content: space-evenly;
+    
+}
+.form{
+    background-image:linear-gradient(to bottom, rgb(222, 222, 222), rgb(87, 87, 87))
 }
 
-.col{
+.col-12 {
     border: solid black 2px;
     height: 400px;
-    margin-left: 30px;
     border-radius: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 15px;
-    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    justify-content: space-evenly;
+    
 }
 .pdfs{
     height: 30px;
     width: 30px;
 }
-.pdfs1{
-    height: 30px;
-    width: 30px;
+
+.Info-clara{
+    color:black;
+    padding: 30px;
+    height: 100%;
+}
+.Info-clara .row div{
+    height: 350px;
+}
+.personal{
+    padding:15px;
+    border: solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    color: black;
+}
+.personal:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(18, 237, 237);
+    box-shadow: 2px red;
 }
 
 @media screen and (max-width: 767px) {
