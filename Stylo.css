@@ -14,7 +14,10 @@
     font-size: 2rem;
     padding: 10px;;
 }
-
+.LogoMadara:hover{
+    rotate: 720;
+    transition: all 1s;
+}
 
 #wpp{
     color: rgb(8, 232, 8);
@@ -64,6 +67,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to bottom, whitesmoke ,rgb(87, 99, 98));
+   
 }
 .hero-inferior img{
     border: solid 1px black;
@@ -145,9 +149,72 @@ svg {
     color: white;
     background-color: black;
     border: 2px solid rgb(18, 237, 237);
-    box-shadow: 2px red;
+}
+form{
+    padding: 50px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 30px;
+    width: 400px;
+    margin: 100px auto;
+    
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.tit-form{
+    color: #283629;
+    font-size: 35px;
+}
+label{
+    color: #283629;
+    font-size: 15pxpx;
+    font-weight: 500;
+    margin-bottom: 5px;
+
 }
 
+input, textarea{
+    padding: 17px 25px;
+    margin-bottom: 5px;
+    background-color: #EDFFF0;
+    border: solid gray 0.5px;
+    border-radius: 30px !important;
+    color:black;
+    outline: none;
+}
+.btn{
+    background-color:#EDFFF0;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+    border: 1px;
+    background-color: #51d94c;
+}
+.btn:hover{
+    background-color: chartreuse;
+}
+
+input::placeholder{
+    color: #b5cae6;
+
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-txt a {
+    color:rgb(67, 67, 158);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
